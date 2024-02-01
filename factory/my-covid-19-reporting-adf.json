@@ -1,0 +1,9 @@
+{
+	"name": "my-covid-19-reporting-adf",
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ed68e7ba-74a4-4681-98b3-9b5fb8ccd320",
+		"tenantId": "a80fc901-74cd-424a-9520-65ecad7c3f3b"
+	}
+}
