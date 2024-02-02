@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "my-covid-19-reporting-adf"
+		},
+		"DDanielCoding_credential": {
+			"value": ""
+		},
+		"link_service_ablob_covidreportingsa_connectionString": {
+			"value": ""
+		},
+		"link_service_adls_covidreportingdl_accountKey": {
+			"value": ""
+		},
+		"ls_db_covid_cluster_accessToken": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_clusterPassword": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_clusterSshPassword": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_servicePrincipalKey": {
+			"value": ""
+		},
+		"DDanielCoding_properties_typeProperties_username": {
+			"value": "DDanielCoding"
+		},
+		"link_service_adls_covidreportingdl_properties_typeProperties_url": {
+			"value": "https://uniquecovid19reportingdl.dfs.core.windows.net/"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
+			"value": "7d8e63c4-5ca9-40e6-abce-395109635421"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
+			"value": "covid-reporting-rg"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId": {
+			"value": "123456"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_tenant": {
+			"value": "a80fc901-74cd-424a-9520-65ecad7c3f3b"
+		},
+		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"value": "/subscriptions/7d8e63c4-5ca9-40e6-abce-395109635421/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/mycovid19reportingsa"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
