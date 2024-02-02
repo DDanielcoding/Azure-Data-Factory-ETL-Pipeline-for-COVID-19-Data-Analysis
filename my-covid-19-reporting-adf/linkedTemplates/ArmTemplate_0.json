@@ -124,14 +124,17 @@
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "https://adb-7424155664790558.18.azuredatabricks.net",
+					"domain": "https://adb-7713218229996456.16.azuredatabricks.net",
 					"accessToken": {
 						"type": "SecureString",
 						"value": "[parameters('ls_db_covid_cluster_accessToken')]"
 					},
-					"newClusterNodeType": "Standard_DS3_v2",
+					"newClusterNodeType": "Standard_DS4_v2",
 					"newClusterNumOfWorker": "1",
-					"newClusterVersion": "9.1.x-photon-scala2.12",
+					"newClusterSparkEnvVars": {
+						"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+					},
+					"newClusterVersion": "12.2.x-scala2.12",
 					"clusterOption": "Fixed",
 					"newClusterInitScripts": []
 				}
@@ -165,11 +168,11 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Execute Population Transformation",
+						"name": "Excecute Population Transformation",
 						"type": "DatabricksNotebook",
 						"dependsOn": [],
 						"policy": {
-							"timeout": "7.00:00:00",
+							"timeout": "0.12:00:00",
 							"retry": 0,
 							"retryIntervalInSeconds": 30,
 							"secureOutput": false,
