@@ -26,11 +26,17 @@
 		"ls_hdi_covid_cluster_servicePrincipalKey": {
 			"value": ""
 		},
+		"ls_sql_covid_db_connectionString": {
+			"value": ""
+		},
 		"DDanielCoding_properties_typeProperties_username": {
 			"value": "DDanielCoding"
 		},
 		"link_service_adls_covidreportingdl_properties_typeProperties_url": {
 			"value": "https://uniquecovid19reportingdl.dfs.core.windows.net/"
+		},
+		"ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+			"value": "0202-182036-ize0s4xk"
 		},
 		"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
 			"value": "7d8e63c4-5ca9-40e6-abce-395109635421"

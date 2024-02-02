@@ -35,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'servicePrincipalKey' of 'ls_hdi_covid_cluster'"
 		},
+		"ls_sql_covid_db_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_sql_covid_db'"
+		},
 		"DDanielCoding_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "DDanielCoding"
@@ -42,6 +46,10 @@
 		"link_service_adls_covidreportingdl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://uniquecovid19reportingdl.dfs.core.windows.net/"
+		},
+		"ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0202-182036-ize0s4xk"
 		},
 		"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
 			"type": "string",
@@ -106,6 +114,9 @@
 					"ls_db_covid_cluster_accessToken": {
 						"value": "[parameters('ls_db_covid_cluster_accessToken')]"
 					},
+					"ls_sql_covid_db_connectionString": {
+						"value": "[parameters('ls_sql_covid_db_connectionString')]"
+					},
 					"ls_hdi_covid_cluster_clusterPassword": {
 						"value": "[parameters('ls_hdi_covid_cluster_clusterPassword')]"
 					},
@@ -120,6 +131,9 @@
 					},
 					"link_service_adls_covidreportingdl_properties_typeProperties_url": {
 						"value": "[parameters('link_service_adls_covidreportingdl_properties_typeProperties_url')]"
+					},
+					"ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('ls_db_covid_cluster_properties_typeProperties_existingClusterId')]"
 					},
 					"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
