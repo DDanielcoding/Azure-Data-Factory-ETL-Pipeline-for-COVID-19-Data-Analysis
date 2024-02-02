@@ -5,6 +5,9 @@
 			"referenceName": "link_service_adls_covidreportingdl",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "raw"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
