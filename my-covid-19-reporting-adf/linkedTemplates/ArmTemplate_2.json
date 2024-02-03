@@ -17,7 +17,7 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"description": "This trigger dependent on the tr_process_hospital_admission_data trigger!",
+				"description": "This trigger will be dependent on the tr_process_hospital_admission_data trigger!",
 				"annotations": [],
 				"runtimeState": "Started",
 				"pipeline": {
@@ -31,7 +31,7 @@
 				"typeProperties": {
 					"frequency": "Hour",
 					"interval": 24,
-					"startTime": "2024-02-02T23:59:59Z",
+					"startTime": "2024-02-02T00:00:00Z",
 					"delay": "00:00:00",
 					"maxConcurrency": 50,
 					"retryPolicy": {
