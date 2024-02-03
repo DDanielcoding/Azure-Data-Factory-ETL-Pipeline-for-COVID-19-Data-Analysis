@@ -27,18 +27,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_sql_covid_db'"
 		},
-		"ls_hdi_covid_cluster_clusterPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterPassword' of 'ls_hdi_covid_cluster'"
-		},
-		"ls_hdi_covid_cluster_clusterSshPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterSshPassword' of 'ls_hdi_covid_cluster'"
-		},
-		"ls_hdi_covid_cluster_servicePrincipalKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'servicePrincipalKey' of 'ls_hdi_covid_cluster'"
-		},
 		"DDanielCoding_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "DDanielCoding"
@@ -54,22 +42,6 @@
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "@{linkedService().sourceBaseURL}"
-		},
-		"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
-			"type": "string",
-			"defaultValue": "7d8e63c4-5ca9-40e6-abce-395109635421"
-		},
-		"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
-			"type": "string",
-			"defaultValue": "covid-reporting-rg"
-		},
-		"ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "123456"
-		},
-		"ls_hdi_covid_cluster_properties_typeProperties_tenant": {
-			"type": "string",
-			"defaultValue": "a80fc901-74cd-424a-9520-65ecad7c3f3b"
 		}
 	},
 	"variables": {
@@ -631,6 +603,74 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/ds_processed_testing')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "link_service_adls_covidreportingdl",
+					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "processed"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "ecdc/testing",
+						"fileSystem": "processed"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": false,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/link_service_adls_covidreportingdl')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/ds_raw_cases_and_deaths')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -758,54 +798,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/link_service_adls_covidreportingdl')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ls_hdi_covid_cluster')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsightOnDemand",
-				"typeProperties": {
-					"clusterType": "hadoop",
-					"clusterSize": 4,
-					"timeToLive": "00:15:00",
-					"version": "4.0",
-					"hostSubscriptionId": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId')]",
-					"clusterResourceGroup": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup')]",
-					"servicePrincipalId": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId')]",
-					"tenant": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_tenant')]",
-					"clusterNamePrefix": "",
-					"clusterPassword": {
-						"type": "SecureString",
-						"value": "[parameters('ls_hdi_covid_cluster_clusterPassword')]"
-					},
-					"clusterSshPassword": {
-						"type": "SecureString",
-						"value": "[parameters('ls_hdi_covid_cluster_clusterSshPassword')]"
-					},
-					"servicePrincipalKey": {
-						"type": "SecureString",
-						"value": "[parameters('ls_hdi_covid_cluster_servicePrincipalKey')]"
-					},
-					"additionalLinkedServiceNames": [
-						{
-							"referenceName": "link_service_ablob_covidreportingsa",
-							"type": "LinkedServiceReference"
-						}
-					],
-					"linkedServiceName": {
-						"referenceName": "link_service_ablob_covidreportingsa",
-						"type": "LinkedServiceReference"
-					},
-					"headNodeSize": "",
-					"dataNodeSize": "",
-					"zookeeperNodeSize": ""
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/link_service_ablob_covidreportingsa')]"
 			]
 		}
 	]

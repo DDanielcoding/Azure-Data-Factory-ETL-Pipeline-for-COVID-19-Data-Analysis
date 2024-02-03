@@ -117,15 +117,6 @@
 					"ls_sql_covid_db_connectionString": {
 						"value": "[parameters('ls_sql_covid_db_connectionString')]"
 					},
-					"ls_hdi_covid_cluster_clusterPassword": {
-						"value": "[parameters('ls_hdi_covid_cluster_clusterPassword')]"
-					},
-					"ls_hdi_covid_cluster_clusterSshPassword": {
-						"value": "[parameters('ls_hdi_covid_cluster_clusterSshPassword')]"
-					},
-					"ls_hdi_covid_cluster_servicePrincipalKey": {
-						"value": "[parameters('ls_hdi_covid_cluster_servicePrincipalKey')]"
-					},
 					"DDanielCoding_properties_typeProperties_username": {
 						"value": "[parameters('DDanielCoding_properties_typeProperties_username')]"
 					},
@@ -137,18 +128,6 @@
 					},
 					"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
-					},
-					"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
-						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId')]"
-					},
-					"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
-						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup')]"
-					},
-					"ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId": {
-						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId')]"
-					},
-					"ls_hdi_covid_cluster_properties_typeProperties_tenant": {
-						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_tenant')]"
 					}
 				}
 			},
@@ -167,6 +146,27 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"ls_hdi_covid_cluster_clusterPassword": {
+						"value": "[parameters('ls_hdi_covid_cluster_clusterPassword')]"
+					},
+					"ls_hdi_covid_cluster_clusterSshPassword": {
+						"value": "[parameters('ls_hdi_covid_cluster_clusterSshPassword')]"
+					},
+					"ls_hdi_covid_cluster_servicePrincipalKey": {
+						"value": "[parameters('ls_hdi_covid_cluster_servicePrincipalKey')]"
+					},
+					"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
+						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId')]"
+					},
+					"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
+						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup')]"
+					},
+					"ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId": {
+						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId')]"
+					},
+					"ls_hdi_covid_cluster_properties_typeProperties_tenant": {
+						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_tenant')]"
 					},
 					"tr_population_data_arrived_properties_typeProperties_scope": {
 						"value": "[parameters('tr_population_data_arrived_properties_typeProperties_scope')]"
