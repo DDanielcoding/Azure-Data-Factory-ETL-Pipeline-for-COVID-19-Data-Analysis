@@ -16,13 +16,13 @@ In an Azure Data Factory pipeline, you can use activities to interact with Azure
 **- Solution Architecture: Building a robust solution architecture for data engineering projects.**<br />
 **- Data Integration: Integrating data from HTTP clients, Azure Blob Storage, and Azure Data Lake Gen2 using ADF.**<br />
 **- Control Flow: Implementing branching and chaining activities in ADF pipelines using control flow activities such as Get Metadata, If Condition, ForEach, Delete, Validation, etc.**<br />
-**- Metadata Driven Pipelines: Utilizing Parameters and Variables in Pipelines, Datasets, and LinkedServices to create metadata-driven pipelines.**
-**- Debugging: Debugging data pipelines and resolving issues efficiently.**
-**- Pipeline Scheduling: Scheduling pipelines using triggers such as Event Trigger, Schedule Trigger, and Tumbling Window Trigger.**
-**- Transformation Logic: Creating Mapping Data Flows to implement transformation logic including Source, Filter, Select, Pivot, Lookup, Conditional Split, Derived Column, Aggregate, Join, and Sink     transformation.**
-**- Dependency Management: Establishing dependencies between pipelines and triggers to orchestrate the data flow effectively.**
-**- Monitoring: Monitoring data pipelines, creating alerts, and reporting metrics using Azure Data Factory Monitor.**
-**- Azure Storage Solutions: Creating and managing Azure Storage Account, Azure Data Lake Gen2, and Azure SQL Database.**
-**- Azure HDInsight & Databricks: Creating clusters, interacting with UI, and executing activities from ADF.**
+**- Metadata Driven Pipelines: Utilizing Parameters and Variables in Pipelines, Datasets, and LinkedServices to create metadata-driven pipelines.**<br />
+**- Debugging: Debugging data pipelines and resolving issues efficiently.**<br />
+**- Pipeline Scheduling: Scheduling pipelines using triggers such as Event Trigger, Schedule Trigger, and Tumbling Window Trigger.**<br />
+**- Transformation Logic: Creating Mapping Data Flows to implement transformation logic including Source, Filter, Select, Pivot, Lookup, Conditional Split, Derived Column, Aggregate, Join, and Sink transformation.**<br />
+**- Dependency Management: Establishing dependencies between pipelines and triggers to orchestrate the data flow effectively.**<br />
+**- Monitoring: Monitoring data pipelines, creating alerts, and reporting metrics using Azure Data Factory Monitor.**<br />
+**- Azure Storage Solutions: Creating and managing Azure Storage Account, Azure Data Lake Gen2, and Azure SQL Database.**<br />
+**- Azure HDInsight & Databricks: Creating clusters, interacting with UI, and executing activities from ADF.**<br />
 
 
