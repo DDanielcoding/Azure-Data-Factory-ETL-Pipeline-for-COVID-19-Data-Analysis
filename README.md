@@ -13,8 +13,8 @@ In an Azure Data Factory pipeline, you can use activities to interact with Azure
 
 # Features
 
-**- Solution Architecture: Building a robust solution architecture for data engineering projects.**
-**- Data Integration: Integrating data from HTTP clients, Azure Blob Storage, and Azure Data Lake Gen2 using ADF.**
+**- Solution Architecture: Building a robust solution architecture for data engineering projects.**\n
+**- Data Integration: Integrating data from HTTP clients, Azure Blob Storage, and Azure Data Lake Gen2 using ADF.**\n
 **- Control Flow: Implementing branching and chaining activities in ADF pipelines using control flow activities such as Get Metadata, If Condition, ForEach, Delete, Validation, etc.**
 **- Metadata Driven Pipelines: Utilizing Parameters and Variables in Pipelines, Datasets, and LinkedServices to create metadata-driven pipelines.**
 **- Debugging: Debugging data pipelines and resolving issues efficiently.**
