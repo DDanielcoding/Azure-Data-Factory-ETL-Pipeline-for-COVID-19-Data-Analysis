@@ -20,6 +20,7 @@ In an Azure Data Factory pipeline, you can use activities to interact with Azure
 **- Control Flow: Implementing branching and chaining activities in ADF pipelines using control flow activities such as Get Metadata, If Condition, ForEach, Delete, Validation, etc.**<br />
 
 **- Metadata Driven Pipelines: Utilizing Parameters and Variables in Pipelines, Datasets, and LinkedServices to create metadata-driven pipelines.**<br />
+
 **- Debugging: Debugging data pipelines and resolving issues efficiently.**<br />
 
 **- Pipeline Scheduling: Scheduling pipelines using triggers such as Event Trigger, Schedule Trigger, and Tumbling Window Trigger.**<br />
