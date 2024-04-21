@@ -1,3 +1,15 @@
+# Personal Journey
+
+This project represents my very first interaction with data pipelines and manipulation. It served as my entry point into the fascinating world of data engineering and business intelligence. The challenges and triumphs experienced during the development of this solution ignited my passion for exploring further into this area of business.
+
+It inspired me to delve deeper into data engineering, learning more about the intricacies of data integration, transformation, and analysis. This project also symbolizes my commitment to continuous learning and growth in this field. It has inspired me to pursue further knowledge, explore new technologies, and embark on exciting opportunities in the realm of data-driven solutions.
+
+I hope that sharing my journey from novice to aspiring data engineer will inspire others who are considering venturing into this dynamic and rewarding area of business. Let this project serve as a reminder that every journey begins with a single step, and with dedication and perseverance, anything is possible if you put your mind to it in the field of data engineering.
+
+
+
+
+
 # Overview
 
 This repository contains the implementation of an ETL pipeline using Azure Data Factory (ADF) for building data engineering solutions. The pipeline leverages various Azure technologies such as Azure Data Lake Gen2, Azure Blob Storage, Azure SQL Database, Azure Databricks, Azure HDInsight.
