@@ -2,7 +2,8 @@
 
 This repository contains the implementation of an ETL pipeline using Azure Data Factory (ADF) for building data engineering solutions. The pipeline leverages various Azure technologies such as Azure Data Lake Gen2, Azure Blob Storage, Azure SQL Database, Azure Databricks, Azure HDInsight.
 
-My goal was to learn and showcase how to build a real-world data pipeline in Azure Data Factory and expand my knowledge and skill in Data Engineering in Azure using tools like Azure Data Factory(ADF), which enables users to create, schedule, and orchestrate data pipelines that move and transform data from various sources to destinations, such as databases, data lakes, and alanytics services within Azure and beyond. ADF supports a range of data processing activities and offers capabilities for monitoring and managing the execution of data pipelines.
+My goal was to learn and showcase how to build a real-world data pipeline in Azure Data Factory and expand my knowledge and skill in Data Engineering in Azure using tools like Azure Data Factory(ADF), which enables users to create, schedule, and orchestrate data pipelines that move and transform data from various sources to destinations, such as databases, data lakes, and analytics services within Azure and beyond. ADF supports a range of data processing activities and offers capabilities for monitoring and managing the execution of data pipelines.
+
 
 In an Azure Data Factory pipeline, you can use activities to interact with Azure Data Lake Gen2 and Azure SQL Database, such as:
 
